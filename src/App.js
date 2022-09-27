@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+// This is just an example of what you can do with the api you setup on preload.js
+// It returns a promise so you must resolve it
+window.api.getInfos()
+  .then((data) => console.log(data))
+
 function App() {
   return (
     <div className="App">
